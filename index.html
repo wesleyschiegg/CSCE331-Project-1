@@ -4,31 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Wesley Schiegg</title>
+    <link rel="stylesheet" href="style1.css" id="baseCSS">
+    <link rel="stylesheet" href="style2.css" id="altCSS" disabled>
+    
 </head>
 <body>
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Technical Portfolio</a></li>
-            <li><a href="qualifications.html">Qualifications</a></li>
-            <li><a href="service.html">Service</a></li>
-            <li><a href="ai.html">AI</a></li>
-        </ul>
+    <nav class="navbar" id="site-nav">
+      <ul class="nav-left">
+        <li><a href="index.html">Home</a></li>
+      </ul>
+      <ul class="nav-right">
+        <li><a href="portfolio.html">Technical Portfolio</a></li>
+        <li><a href="qualifications.html">Qualifications</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="genai.html">AI</a></li>
+      </ul>
     </nav>
+
     <main class="home-main">
       <div class="headerBox">
         <h1>Wesley Schiegg</h1>
         <h2>Undergraduate Computer Science Major at Texas A&M University</h2>
       </div>
-      <h2>About me</h2>
-      <p>I am a junior at Texas A&M University studying Computer Science. I was born and raised in the 
-        Dallas/Fort Worth area where I attended Marcus High School. The reason I chose Computer Science 
-        as my major is because I love coding and see myself as a natural programmer. Outside of school, 
-        I enjoy skiing, cooking, traveling, and trying new things.
-      </p>
-      <img src="ski.jpg" width="500">
-      <figcaption>temp photo</figcaption>
+      <button id="themeToggle" class="btn">Switch Style</button>
+      <div class="home-section">
+        <div class="about-me">
+          <h2 class="about-title">About me</h2>
+          <p>
+            Hi, I’m Wesley. I’m a junior at <a href="https://www.tamu.edu/index.html">Texas A&M University</a> studying Computer Science. I grew up in the Dallas/Fort Worth area and graduated from Marcus High School. I’ve always loved solving problems and building things, which naturally led me to programming. Whether I’m writing code or debugging something that just won’t work, I genuinely enjoy the process.
+          </p>
+          <p>
+            Outside of tech, I enjoy skiing, cooking, and traveling, especially when it means trying something new. I’m always looking for opportunities to learn, explore, and push myself a little further.
+          </p>
+        </div>
+        <img src="ski.jpg" class="home-pic" width="400">
+      </div>
+      <section class="social-links">
+        <h2>Connect with me</h2>
+        <ul class="profile-links">
+          <li>
+            <a href="https://www.linkedin.com/in/wesleyschiegg" target="_blank" rel="noopener">
+              <img src="linkedin-icon.webp" alt="LinkedIn" class="icon"> LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://www.github.com/wesleyschiegg" target="_blank" rel="noopener">
+              <img src="github-icon.png" alt="GitHub" class="icon"> GitHub
+            </a>
+          </li>
+          <li>
+            <a href="mailto:weskyschiegg@gmail.com">
+              <img src="email-icon.png" alt="Email" class="icon"> weskyschiegg@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/wesley.schiegg/" target="_blank" rel="noopener">
+              <img src="instagram-icon.png" alt="Instagram" class="icon"> Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://tamu-csm.symplicity.com/profiles/wesley.schiegg" target="_blank" rel="noopener">
+              <img src="tamu-icon.png" alt="HireAggies" class="icon"> HireAggies
+            </a>
+          </li>
+        </ul>
+      </section>
     </main>
     
+    <script src="nav.js"></script>
+    <script src="switch.js"></script>
 </body>
 </html>

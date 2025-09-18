@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service | Wesley Schiegg</title>
+    <link rel="stylesheet" href="style1.css" id="baseCSS">
+    <link rel="stylesheet" href="style2.css" id="altCSS" disabled>
 </head>
 <body>
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Technical Portfolio</a></li>
-            <li><a href="qualifications.html">Qualifications</a></li>
-            <li><a href="service.html">Service</a></li>
-            <li><a href="ai.html">AI</a></li>
-        </ul>
+    <nav class="navbar" id="site-nav">
+      <ul class="nav-left">
+        <li><a href="index.html">Home</a></li>
+      </ul>
+      <ul class="nav-right">
+        <li><a href="portfolio.html">Technical Portfolio</a></li>
+        <li><a href="qualifications.html">Qualifications</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="genai.html">AI</a></li>
+      </ul>
     </nav>
     
     <main class="service-main">
         <h1>Service</h1>
-        <img src="the_big_event.webp" width="500">
-        <figcaption>temp photo</figcaption>
+        <button id="themeToggle" class="btn">Switch Style</button>
+        <img src="the_big_event.webp" class="service-img" width="500">
         <p>I would like to be more involved in giving back to the community in the near future. I am hoping 
             to get involved in <a href="https://bigevent.tamu.edu/">The Big Event</a> here at Texas A&M this year. 
             I have always wanted to participate in it but I have not been able to these past couple years due 
@@ -27,7 +31,15 @@
             be able to do my part this year. I also am looking to get involved in other community service activities 
             during the rest of my time here at Texas A&M by joining organizations that participate in those.
         </p>
-        
+        <p>
+          Another volunteer event that I would like to take part in is <a href="https://www.habitat.org/">Habitat for Humanity</a>.
+          They help build homes for people around the Bryan/College Station area and I feel like that's something
+          that I could participate in. I would also like to pair my love for cooking with volunteering by getting 
+          involved in <a href="https://capbv.org/programs/meals-on-wheels/">Meals on Wheels</a>. They help the home-bound 
+          elderly by supplying meals to them when they are unable to secure one for themselves.
+        </p>
     </main>
+    <script src="nav.js"></script>\
+    <script src="switch.js"></script>
 </body>
 </html>
